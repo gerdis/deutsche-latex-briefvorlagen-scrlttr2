@@ -27,7 +27,6 @@
 \setkomavar{signature}{Vorname Nachname}
 \setkomavar{fromaddress}{Abs.-Straße xx\\xxxxx Abs.-Ort}
 \setkomavar{fromphone}{+49\,(0)\,111\,12345}
-%\setkomavar{fromphone}{0111/1111111}
 %\setkomavar{fromfax}{+49\,(0)\,111\,12345} 
 \setkomavar{fromemail}{mailadresse@example.org}
 \setkomavar*{emailseparator}{E-mail}
