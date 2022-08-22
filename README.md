@@ -7,8 +7,9 @@ Wie im Deutschen üblich, sind Brieftext und Signatur in beiden Varianten nicht 
 
 Die gewünschte .lco kann einfach in Musterbrief.tex aktiviert werden, und die meisten Befehle sind kommentiert, um eine einfache Anpassung zu ermöglichen.
 
+\* Image credit...
+
 ### Beispieloutput schlichte Variante
 
 ![A test image](Output/schlicht2.png)
 
-\* Image credit...
