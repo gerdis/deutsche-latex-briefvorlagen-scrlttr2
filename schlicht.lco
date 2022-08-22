@@ -1,0 +1,44 @@
+\ProvidesFile{schlicht.lco}[2022/13/08 letter class option]
+\RequirePackage{ngerman}                % Deutsche Sprache
+\RequirePackage[T1]{fontenc}            % Ligaturschriften
+\RequirePackage[utf8]{inputenc}      % Eingabezeichensatz
+\RequirePackage{calc}               % für Berechnungen
+\RequirePackage{advdate}       % Datumsberechnung (z.B. morgen, vorgestern ...)
+\RequirePackage[draft=true]{hyperref} % zu draft=false ändern, falls URL-Hervorhebung gewünscht
+\hypersetup{pdfpagemode=None}
+\KOMAoptions{
+        paper=a4,
+        parskip=full, % Leerzeile zwischen Absätzen
+        fromalign=right, %Absender rechts im Briefkopf
+        fromphone,
+        fromemail,
+%        fromfax, %zeige Absender-Fax im Briefkopf
+%        fromurl, %zeige Absender-URL im Briefkopf
+        foldmarks=BlmTpv %Faltmarken (auf false setzen falls unerwünscht)
+}
+\setplength{lochpos}{\useplength{toaddrhpos}}
+\setplength{refhpos}{\useplength{toaddrhpos}}% setze Zeile mit Datum, ggf. Kunden-/Rechnungsnr. o.ä. auf Höhe von Adressblock
+\setplength{refwidth}{\paperwidth-\useplength{refhpos}-\useplength{lochpos}}%passe Breite der Bezugszeile an Briefkopf an
+\setplength{sigbeforevskip}{3\baselineskip} %vergrößere Distanz zw. Grußformel u. Signatur
+\renewcommand*{\raggedsignature}{\raggedright} % vermeide Einrückung von Signatur
+
+%Absender-Daten
+\setkomavar{fromname}{Abs.-Vorname Abs.-Nachname}
+\setkomavar{signature}{Vorname Nachname}
+\setkomavar{fromaddress}{Abs.-Straße xx\\xxxxx Abs.-Ort}
+\setkomavar{fromphone}{+49\,(0)\,111\,12345}
+%\setkomavar{fromphone}{0111/1111111}
+%\setkomavar{fromfax}{+49\,(0)\,111\,12345} 
+\setkomavar{fromemail}{mailadresse@example.org}
+\setkomavar*{emailseparator}{E-mail}
+\setkomavar{emailseparator}{:}
+%\setkomavar{fromurl}{\url{www.website-blablabla.com}}
+%\setkomavar*{urlseparator}{}
+%\setkomavar{urlseparator}{}
+
+%Bezugszeichenzeile
+%\setkomavar{yourref}{1111} %Empfänger-Referenz
+%\setkomavar{yourmail}{\AdvanceDate[-2]\today} % ``Ihr Schreiben vom ...'' (Beispieldatum = vorgestern)
+%\setkomavar{myref}{XXXX} %Absender-Referenz
+%\setkomavar{customer}{3333} %Kundennummer
+%\setkomavar{invoice}{xxxx} % Rechnungsnummer

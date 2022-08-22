@@ -1,0 +1,24 @@
+\documentclass[12pt]{scrlttr2}
+\usepackage{ragged2e} %für text alignment
+\LoadLetterOption{schlicht} % letter class option f. schlichte Variante 
+%\LoadLetterOption{professionalB} % letter class option f. Variante mit Logo
+\usepackage{graphicx} %Grafikpaket
+\graphicspath{{./images/}}% Grafikpfad (benötigt für Logo)
+\usepackage{lmodern}
+\usepackage{calc}%Berechnungen
+\usepackage{ngerman}%deutsche Sprache
+\oddsidemargin=\dimexpr\useplength{toaddrhpos}-1in\relax %vermeide Einrückung von Text
+\textwidth=\useplength{refwidth} %passe Textbreite an Bezugs-/Datumszeile an
+\begin{document}
+%\sffamily
+\begin{letter}{Empf.-Vorname Empf.-Nachname\\Empf.-Straße xx\\xxxxx Empf.-Ort}
+\setkomavar{subject}{Hier steht irgendein Betreff}
+\opening{Sehr geehrte*r Frau/Herr,}
+\RaggedRight
+Praesent blandit blandit mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis. Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan semper. Praesent blandit blandit mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis. Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan semper.
+
+Praesent blandit blandit mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis. Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan semper.
+\closing{Mit freundlichen Grüßen}
+%\encl{Dokument XY} % Anlage(n)
+\end{letter}
+\end{document}
