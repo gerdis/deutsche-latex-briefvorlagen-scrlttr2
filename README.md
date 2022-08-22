@@ -1,1 +1,1 @@
-![A test image](Output/schlicht.png)
+![A test image](Output/schlicht.PNG)
