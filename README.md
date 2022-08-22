@@ -1,1 +1,1 @@
-![A test image](Output/better.png)
+![A test image](Output/better.PNG)
