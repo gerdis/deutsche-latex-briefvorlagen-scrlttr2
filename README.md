@@ -15,7 +15,7 @@ Einfach die gewünschte Letter Class Option (.lco) in Musterbrief.tex aktivieren
 
 ### Beispieloutput 
 
-#### schlichte Variante
+#### schlicht
 
 ![A test image](Output/schlicht2.png)
 
