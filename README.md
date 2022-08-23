@@ -15,4 +15,4 @@ Die gewünschte .lco kann einfach in Musterbrief.tex aktiviert werden, und die m
 
 ### Beispieloutput Logo-Variante
 
-![A test image](Output/logo.png)
+![A test image](Output/logo2.png)
