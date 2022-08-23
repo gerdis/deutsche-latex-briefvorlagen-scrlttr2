@@ -1,8 +1,8 @@
 Ein kleines Repository, das die Verwendung von KOMA-Script scrlttr2 zur Erstellung von deutschen Geschäftsbriefen in LaTeX demonstriert.
 
 Neben dem Brief-Template(Musterbrief.tex) stehen zwei verschiedene *Letter Class Options* bereit:  
-schlicht.lco erzeugt ein einfaches an DIN 5008 orientiertes Brieflayout. 
-logo.lco demonstriert, wie für ein etwas professionelleres Layout ein Logo __\*__ eingefügt und an üblicher Stelle im Briefkopf plaziert werden kann.
+*schlicht.lco* erzeugt ein einfaches an DIN 5008 orientiertes Brieflayout. 
+*logo.lco* demonstriert, wie für ein etwas professionelleres Layout ein Logo __\*__ eingefügt und an üblicher Stelle im Briefkopf plaziert werden kann.
 Wie im Deutschen üblich, sind Brieftext und Signatur in beiden Varianten nicht eingerückt.
 
 Die meisten Befehle sind kommentiert, um eine einfache Anpassung zu ermöglichen.
