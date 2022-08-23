@@ -2,12 +2,12 @@ Ein kleines Repository, das die Verwendung von KOMA-Script scrlttr2 zur Erstellu
 
 Neben dem Brief-Template(Musterbrief.tex) stehen zwei verschiedene Letter Class Options bereit:  
 schlicht.lco erzeugt ein einfaches an DIN 5008 orientiertes Brieflayout. 
-logo.lco demonstriert, wie für ein etwas professionelleres Layout ein Logo\* eingefügt und an üblicher Stelle im Briefkopf plaziert werden kann.
+logo.lco demonstriert, wie für ein etwas professionelleres Layout ein Logo_\*_ eingefügt und an üblicher Stelle im Briefkopf plaziert werden kann.
 Wie im Deutschen üblich, sind Brieftext und Signatur in beiden Varianten nicht eingerückt.
 
 Die meisten Befehle sind kommentiert, um eine einfache Anpassung zu ermöglichen.
 
-\* Image by [Greg Stevenson](https://pixabay.com/users/photos_greg-21117672/) from Pixabay
+_\*_ Image by [Greg Stevenson](https://pixabay.com/users/photos_greg-21117672/) from Pixabay
 
 ### Verwendung
 
