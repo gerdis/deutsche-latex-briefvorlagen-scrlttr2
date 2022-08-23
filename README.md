@@ -16,3 +16,9 @@ Die gewünschte .lco kann einfach in Musterbrief.tex aktiviert werden, und die m
 ### Beispieloutput Logo-Variante
 
 ![A test image](Output/logo2.png)
+
+### Beispieloutput Logo-Variante mit Logo links
+
+(hierfür einfach in logo.lco \raggedleft in Zeile 56 auskommentieren)
+
+![A test image](Output/logo_links.png)
