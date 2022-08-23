@@ -1,0 +1,65 @@
+\ProvidesFile{logo.lco}[2022/23/08 letter class option]
+\RequirePackage{ngerman}                % Deutsche Sprache
+\RequirePackage[T1]{fontenc}            % Ligaturschriften
+\RequirePackage[utf8]{inputenc}      % Eingabezeichensatz
+\RequirePackage{graphicx}               % Grafikpaket
+\RequirePackage{calc}               % für Berechnungen
+\RequirePackage{advdate}       % Datumsberechnung (z.B. morgen, vorgestern ...)
+\RequirePackage[draft=true]{hyperref} % zu draft=false ändern, falls URL-Hervorhebung gewünscht
+\hypersetup{pdfpagemode=None}
+\KOMAoptions{
+        paper=a4,
+        parskip=full, % Leerzeile zwischen Absätzen
+        foldmarks=BlmTpv, %Faltmarken
+}
+
+\setplength{locwidth}{85mm} %Breite location field (enthält hier Absender-Adresse)
+\setplength{lochpos}{\useplength{toaddrhpos}} %Abstand location field von re. Rand = Abstand Adressblock von li. Rand 
+\setplength{refhpos}{\useplength{toaddrhpos}}% setze Zeile mit Datum, ggf. Kunden-/Rechnungsnr. o.ä. auf Höhe von Adressblock
+\setplength{locvpos}{\useplength{toaddrvpos}} %setze oberen Rand von location field auf Höhe von Adressblock
+
+%\setplength{refvpos}{\useplength{locvpos} + \useplength{toaddrheight}} %setze Bezugszeile höher (unter Adressfeld)
+%\setplength{refaftervskip}{\useplength{refaftervskip}+\baselineskip} %vergrößere Abstand zw. Bezugszeile u. Betreffzeile
+
+\setplength{refwidth}{\paperwidth-\useplength{refhpos}-\useplength{lochpos}} %passe Breite der Bezugszeile an Briefkopf an
+\setplength{sigbeforevskip}{3\baselineskip} %vergrößere Distanz zw. Grußformel u. Signatur
+\renewcommand*{\raggedsignature}{\raggedright} % vermeide Einrückung von Grußformel/Signatur
+
+%Absenderdaten
+\setkomavar{fromname}{Unternehmen XY}
+\setkomavar{signature}{Vorname Nachname\\(Position)}
+\setkomavar{fromaddress}{Abs.-Straße xx\\xxxxx Abs.-Ort}
+\setkomavar{fromphone}{+49\,(0)\,111\,12345}
+%\setkomavar{fromfax}{+49\,(0)\,111\,12345}
+\setkomavar{fromemail}{absendermailadresse@example.org}
+\setkomavar*{emailseparator}{E-mail}
+\setkomavar{emailseparator}{:}
+\setkomavar{fromurl}{\url{www.unternehmen-xy.com}}
+\setkomavar*{urlseparator}{}
+\setkomavar{urlseparator}{}
+\setkomavar{frombank}{Bank: IBAN~DE20\,123\,45\,678}
+
+%setze Absenderadresse in location field statt in Briefkopf
+\setkomavar{location}{\raggedleft %rechtsbündig
+\large\usekomavar{fromname}\normalsize\\
+\usekomavar{fromaddress}\\
+\usekomavar{fromphone}\\
+\usekomavar{fromemail}\\
+\usekomavar{fromurl}\\
+\usekomavar{frombank}
+}
+
+%Logo
+\setkomavar{fromlogo}{\includegraphics[scale=0.05]{plane}}
+%definiere neuen Briefkopf, der nur das Logo enthält
+\setkomavar{firsthead}{%
+\raggedleft %platziere Logo rechts im Briefkopf
+\usekomavar{fromlogo}%
+}
+
+%Bezugszeichenzeile:
+%\setkomavar{yourref}{1111} %Empfänger-Referenz
+%%\setkomavar{yourmail}{\AdvanceDate[-2]\today} % ``Ihr Schreiben vom ...'' (Beispieldatum = vorgestern)
+\setkomavar{myref}{XXXX} %Absender-Referenz
+%\setkomavar{customer}{3333} %Kundennummer
+\setkomavar{invoice}{xxxx} % Rechnungsnummer
